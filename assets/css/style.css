@@ -270,6 +270,36 @@ body {
     transition: margin 0.3s ease;
 }
 
+.team-member {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #bbb;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.team-member .member-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-right: 1rem;
+}
+
+.team-member span {
+    transition: all 0.3s ease;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
 /* Content Area */
 .content {
     grid-area: content;
