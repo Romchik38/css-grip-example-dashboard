@@ -87,3 +87,57 @@ body {
     opacity: 0;
     transition: opacity 0.3s ease;
 }
+
+/* Header Area */
+.header {
+    grid-area: header;
+    background: var(--header-bg);
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: var(--shadow);
+    z-index: 100;
+    transition: background 0.3s ease;
+}
+
+/* Sidebar Area */
+.sidebar {
+    grid-area: sidebar;
+    background: var(--sidebar);
+    color: white;
+    padding: 1.5rem 0;
+    box-shadow: var(--card-shadow);
+    z-index: 200;
+    overflow-y: auto;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    transition: all 0.3s ease;
+}
+
+/* Content Area */
+.content {
+    grid-area: content;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    gap: 2rem;
+    grid-template-areas: 
+    "welcome profile"
+    "project stats"
+    "timeline timeline"
+    "users users";
+}
+
+/* Footer Area */
+.footer {
+    grid-area: footer;
+    background: var(--footer-bg);
+    color: var(--footer-text);
+    padding: 1.5rem 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    transition: background 0.3s easy, color 0.3s ease;
+}
