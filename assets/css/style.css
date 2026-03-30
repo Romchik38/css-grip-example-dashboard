@@ -101,6 +101,47 @@ body {
     transition: background 0.3s ease;
 }
 
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.mobile-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-color);
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: var(--time-bg);
+    border-radius: 30px;
+    padding: 0.5rem 1rem;
+    width: 300px;
+}
+
+.search-bar i {
+    color: var(--gray);
+}
+
+.search-bar input {
+    border: none;
+    background: transparent;
+    padding: 0.5rem;
+    width: 100%;
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
 /* Sidebar Area */
 .sidebar {
     grid-area: sidebar;
