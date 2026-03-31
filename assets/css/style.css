@@ -481,6 +481,13 @@ body {
     box-shadow: var(--hover-shadow);
 }
 
+/* Project Section */
+.project-section {
+    grid-area: "project";
+}
+
+
+
 /* Footer Area */
 .footer {
     grid-area: footer;
