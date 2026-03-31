@@ -498,3 +498,70 @@ body {
     font-size: 0.9rem;
     transition: background 0.3s easy, color 0.3s ease;
 }
+
+@media (max-width: 992px) {
+    .content {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+        gap: 2rem;
+        grid-template-areas: 
+        "welcome" 
+        "profile"
+        "project"
+        "stats"
+        "timeline"
+        "users";
+    }
+}
+
+/* Responsive design */
+@media (max-width:768px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas: 
+        "header"
+        "content"
+        "footer";
+    }
+
+    .sidebar {
+        position: fixed;
+        left: 100%;
+        top: 0;
+        height: 100vh;
+        width: var(--sidebar-width);
+        z-index: 200;
+        transition: left 0.3s ease;
+    }
+
+    .sidebar.active {
+        left: 0;
+    }
+
+    .mobile-toggle {
+        display: block;
+    }
+
+    .mobile-overlay.active {
+        display: block;
+        opacity: 1;
+    }
+
+    .search-bar {
+        width: 200px;
+    }
+
+    .header {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .content {
+        padding: 1.5rem 1rem;
+    }
+    .search-bar {
+        display: none;
+    }
+}
